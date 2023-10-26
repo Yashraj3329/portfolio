@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <title>Projects - Yashraj</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html" class="logo">Yashraj.</a>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/skills.html">Skills</a>
+            <a href="#" class="active">Projects</a>
+            <a href="/contact.html">Contact</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+            <a href="/index.html">Home</a>
+            <a href="/skills.html">Skills</a>
+            <a href="#" class="active"  >Projects</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="projects section" id="projects">
+        <h1>My <span>Projects</span></h1>
+
+        <div class="projects__container container grid">
+            <article class="projects__card">
+                <img src="assets/project-img-1.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Amazon Clone</h2>
+                    <a href="https://amazonclone-zeta-one.vercel.app/" target="_blank" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/project-img-2.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Faltu Cheez</h2>
+                    <a href="https://yashraj3329.vercel.app/" target="_blank" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/project-img-3.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Random Bozo</h2>
+                    <a href="#" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/project-img-4.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Comming Soon</h2>
+                    <a href="#" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/project-img-5.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Comming Soon</h2>
+                    <a href="#" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/project-img-6.jpg" alt="projects image" class="projects__img">
+                <div class="projects__modal">
+                    <span class="projects__subtitle">Website</span>
+                    <h2 class="projects__title">Comming Soon</h2>
+                    <a href="#" class="projects__button">Visit Site</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="f-content">
+            <p>&copy;2023 <span>Yashraj / FG STUDIO</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
